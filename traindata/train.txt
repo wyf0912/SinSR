@@ -1,0 +1,3 @@
+/mnt/petrelfs/share/images/train/n01440764/n01440764_10026.JPEG
+/mnt/petrelfs/share/images/train/n01440764/n01440764_10027.JPEG
+/mnt/petrelfs/share/images/train/n01440764/n01440764_10029.JPEG
