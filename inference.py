@@ -30,8 +30,8 @@ def get_parser(**parser_kwargs):
     parser.add_argument(
             "--task",
             type=str,
-            default="realsrx4",
-            choices=['realsrx4', 'bicsrx4_opencv', 'bicsrx4_matlab'],
+            default="SinSR",
+            choices=["SinSR",'realsrx4', 'bicsrx4_opencv', 'bicsrx4_matlab'],
             help="Chopping forward.",
             )
     parser.add_argument("--ddim", action="store_true")

@@ -54,10 +54,10 @@ python inference.py -i testdata/RealSet65 -o results/SinSR/RealSR --scale 4 --ck
 If you are running on a GPU with limited memory, you could reduce the patch size by setting ```--chop_size 256``` to avoid out of memory. However, this will slightly degrade the performance.
 ```sh
 # Results on RealSet65
-python inference.py -i testdata/RealSet65 -o results/SinSR/RealSet65 --scale 4 --ckpt weights/SinSR_v1.pth --one_step --chop_size 256
+python inference.py -i testdata/RealSet65 -o results/SinSR/RealSet65 --scale 4 --ckpt weights/SinSR_v1.pth --one_step --chop_size 256 --task SinSR
 
 # Results on RealSR
-python inference.py -i testdata/RealSR -o results/SinSR/RealSR --scale 4 --ckpt weights/SinSR_v2.pth --one_step --chop_size 256
+python inference.py -i testdata/RealSR -o results/SinSR/RealSR --scale 4 --ckpt weights/SinSR_v2.pth --one_step --chop_size 256 --task SinSR
 ```
 
 ### Results in Table 2
@@ -81,7 +81,7 @@ python inference.py -i testdata/imagenet256/lq/ -o results/SinSR/imagenet  -r te
 # Method 1
 python3 app.py # Select the model to ResShift in the webpage
 # Method 2
-python inference --task realsr -i [image folder/image path] -o [result folder] --scale 4 # Inference using ResShift
+python inference.py --task realsrx4 -i [image folder/image path] -o [result folder] --scale 4 # Inference using ResShift
 ```
 1. Adjust the data path in the config file. Specifically, correct and complete paths in files of [traindata](./traindata/)
 2. Adjust batchsize according your GPUS.
@@ -100,11 +100,12 @@ This project is based on [ResShift](https://github.com/zsyOAOA/ResShift). Thanks
 ## :star: Citation
 Please cite our paper if you find our work useful. Thanks! 
 ```
-@article{wang2023sinsr,
-  title={SinSR: Diffusion-Based Image Super-Resolution in a Single Step},
+@inproceedings{wang2024sinsr,
+  title={SinSR: diffusion-based image super-resolution in a single step},
   author={Wang, Yufei and Yang, Wenhan and Chen, Xinyuan and Wang, Yaohui and Guo, Lanqing and Chau, Lap-Pui and Liu, Ziwei and Qiao, Yu and Kot, Alex C and Wen, Bihan},
-  journal={arXiv preprint arXiv:2311.14760},
-  year={2023}
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={25796--25805},
+  year={2024}
 }
 ```
 
