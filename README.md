@@ -35,7 +35,7 @@ python3 inference.py -i [image folder/image path] -o [result folder] --ckpt weig
 ```
 
 # Run it on Colab
-You can run the code on Google Colab by clicking on the following link: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/LuisFMCuriel/SinSR/blob/colab_demo/colab-demo.ipynb)
+You can run the code on Google Colab by clicking on the following link: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LuisFMCuriel/SinSR/blob/colab_demo/colab-demo.ipynb)
 
 # Requirements
 ## :dolphin: Reproducing the results in the paper
