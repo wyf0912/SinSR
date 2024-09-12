@@ -125,6 +125,7 @@ if __name__ == "__main__":
     ![visitors](https://visitor-badge.laobi.icu/badge?page_id=wyf0912/SinSR)
     """
     
+
     if args.colab:
         examples=[
             ['/content/SinSR/testdata/RealSet65/dog2.png', True, "SinSR", 12345],
