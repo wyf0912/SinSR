@@ -33,6 +33,11 @@ python app.py
 ```sh
 python3 inference.py -i [image folder/image path] -o [result folder] --ckpt weights/SinSR_v1.pth --scale 4 --one_step
 ```
+
+# Run it on Colab
+You can run the code on Google Colab by clicking on the following link: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LuisFMCuriel/SinSR/blob/colab_demo/colab-demo.ipynb)
+
+# Requirements
 ## :dolphin: Reproducing the results in the paper
 ### Results in Table 1
 - Real data for image super-resolution: [RealSet65](testdata/RealSet65) | [RealSR](testdata/RealSR)
